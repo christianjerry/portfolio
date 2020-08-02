@@ -1,0 +1,296 @@
+*{
+box-sizing: border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.hidden{
+    display: none;
+}
+body{
+    margin:  0;
+    background-color: darkslategrey;
+    background-image: url("../images/dot2.png");
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+h1 ,h2 ,a {
+    font-size: 1em;
+}
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+header div:last-child{
+padding: 1px;
+width: 50px;
+border-radius: 20px;
+background-color: lightgoldenrodyellow;
+margin:10px;
+background-color: bisque;
+}
+.gobackLink{
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+header div:first-child{
+   align-self: center;
+   background-color: tomato;
+   padding: 5px;
+   border-radius: 5px;
+}
+header div
+.pushBtn{
+    margin-left: 20px;  
+}
+#toggleBg{
+        border-color: none; 
+}
+.nightBg{
+    background-color:black;
+    color: #fff;
+}
+header button {
+    padding: 10px;
+    border-radius: 50%;color: lawngreen;
+    position: absolue;
+
+}
+.main{
+    margin-top: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* background-color: khaki; */
+}
+.mainLink{
+    margin: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    /* background-color: rgb(105, 105, 0); */
+    align-items: stretch;
+}.mainLink a{
+    padding: 10px;
+    /* background-color: snow; */
+    margin: 20px;
+    text-decoration: none;
+    color:rgb(62, 231, 231);
+    font-size: large;
+    font-weight: bolder;
+    
+}
+.intro{
+    /* background-color: lightsalmon; */
+    color: #fff;
+}
+.intro .title{
+    font-size: 4em;
+}
+.intro .title span{
+    color: coral;
+}
+.intro .subtitle{
+    margin: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.hireME{
+
+}
+.hireME button{
+    padding: 10px;
+    border-radius:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 300px;
+    font-size: 1.3em;
+    cursor: pointer;
+    background-color: coral;
+    color: #fff;
+}
+.hireME button:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 4px 3px  3px rgb(rgb(209, 185, 185), rgb(127, 231, 127), rgb(59, 59, 70),0.3);
+}
+
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin-top: 5%; 
+     text-align: center;
+     font-size: 1.5em;
+}
+
+footer .followMe a{
+    text-decoration: none;
+    color:  white;
+    margin: 20px;
+}
+
+footer .followMe{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer div:last-child{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 0.8em;
+}
+/* Social icons */
+footer .fa{
+    width: 45px;
+    background-color: indianred;
+    border-radius: 50%;
+    padding: 10px;
+}
+.fa:hover{
+    color: rgb(0, 0, 0);
+border-radius: 50%;
+    background-color: honeydew;
+ 
+}
+/* smile emoji */
+.fa-smile-o {
+     color: #fff !important;
+}
+.fa-smile-o:hover{
+    border-radius: 0%;
+    background-color: transparent;
+}
+/* Style for the story page */
+.profil{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.profil div:first-child{
+    width: 60%;
+    text-align: justify;
+    color: black !important;
+}
+.imageDiv img{
+    max-width: 200px;
+    border-radius: 10px;
+}
+.imageDiv {
+    color: #fff;
+}
+.story{
+    text-align: justify;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    font-size:1.2em;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 60px 0px rgb(200,255,200,0.4);
+}
+
+.text-black{
+    color: #000;
+}
+/* Projects page */
+.projects
+{
+    display: flex;
+    flex-flow:  row wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+}
+.project{
+display: flex;
+  height: auto;
+  background-color: #f1f1f1; 
+  width: 400px; 
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  flex-flow: column nowrap;
+  background-color: #fff;
+text-align: center;
+cursor: pointer;
+color: #000 !important;
+}
+.project img{
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+    background-size: cover;
+}
+.project .caption{
+    position: relative;
+    background-color: #fff;
+    width: auto;
+    font-size: 1em;
+    margin-top: -15%;
+    border-left: 10px solid tomato;
+}
+.project:hover{
+   transform:scale(1.1);
+}
+
+/* Moda div goes here */
+.modalDiv{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 2%;
+    background-color: rgb(255, 255, 255);
+    top: 2%;
+    left: 2%;
+    right: 2%;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: auto;
+    z-index: 999999!important;
+    color: black!important;
+}
+.modalDiv div{
+    margin: 20px;
+}
+.modalDiv img{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 3px 5px 6px 5px rgba(94, 87, 87, 0.151);
+}
+.closeModal{
+    background-color: rgb(255, 11, 11);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/*All Media query for  screens less than 600px  */
+@media (max-width:600px){
+    .profil{
+        flex-wrap: wrap;
+    }
+    .profil div:first-child{
+        width: auto;
+    }
+    .imageDiv{
+        order: -1;
+    }
+    .project .caption{
+        position: relative;
+    }
+    .modalDiv{
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+}
