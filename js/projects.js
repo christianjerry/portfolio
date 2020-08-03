@@ -1,5 +1,3 @@
-document.querySelector('.modalDiv').style.display="none" // hide the modal div on page loading
-document.addEventListener("DOMContentLoaded",()=>{
     function closeModal()  /*this function is triggered when the close modal button is clicked */
     {
        let getModal=document.querySelector('.closeModal');
@@ -22,4 +20,3 @@ document.addEventListener("DOMContentLoaded",()=>{
    
   //check the page location if we are located at the projects page, then show the Modal
     closeModal()
-})

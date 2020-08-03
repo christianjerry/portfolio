@@ -2,8 +2,6 @@
 box-sizing: border-box;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-
 .hidden{
     display: none;
 }
@@ -40,6 +38,10 @@ header div:first-child{
    background-color: tomato;
    padding: 5px;
    border-radius: 5px;
+   font-weight: bold;
+   border-style: none;
+   width: 60px;
+   margin-left: 10px;
 }
 header div
 .pushBtn{
@@ -243,7 +245,7 @@ color: #000 !important;
 
 /* Moda div goes here */
 .modalDiv{
-    display: flex;
+    display: none;
     flex-flow: row nowrap;
     justify-content: space-between;
     position: fixed;
@@ -272,6 +274,12 @@ color: #000 !important;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
+    border-style: none;
+    width: 60px;
+}
+.closeModal:hover{
+box-shadow: 3px 5px 6px 5px rgba(94, 87, 87, 0.151);
+
 }
 
 
