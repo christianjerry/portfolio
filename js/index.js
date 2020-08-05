@@ -2,8 +2,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     var count=0;
    function transitionningRole()
    {
-      let jobArray=['a Mobile | Web Developper','a freelancer'];
-     let getSubtitle=document.querySelector('.subtitle')
+      let jobArray=['a Mobile | Web Developper','a freelancer','husband'];
+      let colors=['orange','yellow','lightblue'];
+     let getSubtitle=document.querySelector('.subtitle');
+     
       for(let i=0;i<jobArray.length;i++)
       {
          // getSubtitle.innerHTML=' '
@@ -13,6 +15,7 @@ document.addEventListener("DOMContentLoaded",()=>{
          count=1
       }
       getSubtitle.style.display="block"
+      getSubtitle.style.backgroundColor=colors[count-1];
       getSubtitle.innerHTML=jobArray[count-1];
       setTimeout( 
          transitionningRole, 2000);

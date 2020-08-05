@@ -11,6 +11,7 @@ body{
     background-image: url("../images/dot2.png");
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
+    
 }
 h1 ,h2 ,a {
     font-size: 1em;
@@ -18,7 +19,7 @@ h1 ,h2 ,a {
 header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 header div:last-child{
 padding: 1px;

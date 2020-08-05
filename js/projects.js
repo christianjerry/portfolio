@@ -5,15 +5,15 @@
        let modalImage=document.querySelector('.modalImg')
        getModal.addEventListener('click',()=>{
          modal.style.display="none"
+         document.body.style.overflow="scroll"
+
        })
        let getProjects=document.querySelectorAll(".project")
        getProjects.forEach(project => {project.addEventListener('click',(e)=>{
         let getImg=e.target.getAttribute('src')
         modalImage.src=getImg;
          modal.style.display="flex"
-         document.body.addEventListener('scroll',(e)=>
-           console.log(e)
-         )
+         document.body.style.overflow="hidden"
        })
     })
     }
