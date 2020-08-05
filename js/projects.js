@@ -6,6 +6,7 @@
        getModal.addEventListener('click',()=>{
          modal.style.display="none"
          document.body.style.overflow="scroll"
+         document.body.classList.remove('bgOpacity')
 
        })
        let getProjects=document.querySelectorAll(".project")
@@ -14,6 +15,7 @@
         modalImage.src=getImg;
          modal.style.display="flex"
          document.body.style.overflow="hidden"
+         document.body.classList.add('bgOpacity')
        })
     })
     }

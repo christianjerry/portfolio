@@ -29,6 +29,10 @@ background-color: lightgoldenrodyellow;
 margin:10px;
 background-color: bisque;
 }
+
+.bgOpacity{
+    background-color: rgba(0, 0, 0, 0.781);
+}
 .gobackLink{
     font-size: 1em;
     text-decoration: none;
@@ -272,18 +276,64 @@ color: #000 !important;
 .closeModal{
     background-color: rgb(255, 11, 11);
     color: #fff;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 17px;
+    border-radius: 10%;
     font-weight: bold;
     border-style: none;
-    width: 60px;
+    position: fixed;
+    top: 20px;
+    right: 35px;
+    cursor: pointer;
+    
 }
 .closeModal:hover{
 box-shadow: 3px 5px 6px 5px rgba(94, 87, 87, 0.151);
 
 }
 
+/* contact styling */
 
+.contactDiv{
+    align-items: center;
+    flex-flow: row wrap;
+    display: flex;
+    /* background-color: rgb(218, 177, 101); */
+    padding: 10px;
+    font-size: 1.2em;
+    justify-content: center;
+    background: rgb(7, 129, 123);
+}
+.contactDiv .contactrow{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    justify-content: flex-start;
+    text-align: center;
+    line-height: 2;
+    color: white;
+  
+    padding: 10px;
+    border-radius: 10px;
+}
+.contactDiv .contactrow .fa{
+   font-size: 2em;
+}
+.contactDiv .contactrow .fa:hover{
+background-color: transparent;
+color: #cd5c5c;
+}
+.reachMe{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1.5em;
+    color: seashell;
+}
+
+#googleMap{
+    width: 400px;
+    height: 100%;
+}
 /*All Media query for  screens less than 600px  */
 @media (max-width:600px){
     .profil{
@@ -301,5 +351,9 @@ box-shadow: 3px 5px 6px 5px rgba(94, 87, 87, 0.151);
     .modalDiv{
         flex-flow: row wrap;
         justify-content: flex-start;
+    }
+    .closeModal{
+        right: 20px;
+        padding:10px;
     }
 }
