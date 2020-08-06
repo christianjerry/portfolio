@@ -7,9 +7,11 @@ function hideLoader(){ // this function will be triggered once the page has fini
 var width=-0;
 function animateLoader()
 {
+  let projectDivWidth=document.querySelector('.project');
+  console.log(projectDivWidth.innerWidth)
   let getLoaders=document.querySelectorAll('.loader');
   getLoaders.forEach(loader=>{
-    if(width>400)
+    if( window.innerWidth<400 && width>300)
     {
       width=0;
     }
