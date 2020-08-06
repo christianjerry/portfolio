@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded",()=>{
 toggleNightMode()//check if the user has already activated the night mode , if not, switch on
    document.querySelector('.switchBtn').addEventListener('click',slideBtn);

@@ -1,4 +1,35 @@
-    function closeModal()  /*this function is triggered when the close modal button is clicked */
+function hideLoader(){ // this function will be triggered once the page has finished loading
+  let getDiv=document.querySelectorAll('.project');
+  getDiv.forEach(div=>{
+    div.classList.remove("loaderProject")
+  })
+}
+var width=-0;
+function animateLoader()
+{
+  let getLoaders=document.querySelectorAll('.loader');
+  getLoaders.forEach(loader=>{
+    if(width>400)
+    {
+      width=0;
+    }
+    else
+    {
+      loader.style.width=width+'px';
+      width+=10;
+    }
+})
+
+}
+let interval=setInterval(animateLoader,150);
+
+  document.addEventListener("DOMContentLoaded",()=>{
+    setTimeout(()=>{
+      hideLoader()
+      clearInterval(interval);
+    }
+      ,1000)
+   function closeModal()  /*this function is triggered when the close modal button is clicked */
     {
        let getModal=document.querySelector('.closeModal');
        let modal=document.querySelector('.modalDiv');
@@ -21,4 +52,9 @@
     }
    
   //check the page location if we are located at the projects page, then show the Modal
-    closeModal()
+    closeModal()  
+   })
+   
+   
+   
+   
